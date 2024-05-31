@@ -18,14 +18,16 @@ public class User {
     private String username;
     private String password;
     private String email;
+    private String address;
     private String provider; // facebook, kakao, apple, naver
 
     @Builder
-    public User(Integer id, String username, String password, String email, String provider) {
+    public User(Integer id, String username, String password, String email, String address, String provider) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.email = email;
+        this.address = address;
         this.provider = provider;
     }
 }

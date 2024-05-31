@@ -15,7 +15,7 @@ public class ShopController {
     private final ShopService shopService;
     private final HttpSession session;
 
-    @GetMapping("shop")
+    @GetMapping("/shop")
     public String shop(HttpServletRequest request) {
         User sessionUser = (User) session.getAttribute("sessionUser");
         if (sessionUser == null) throw new RuntimeException("인증된 사용자가 아닙니다.");
